@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="container">
+    <h6>You are logged in as {{ user[0] }}</h6><br>
+</div>
+<div class="container">
+    <div class="chatcontainer" style="width: 400px; height: 100px; border: 2px solid #dedede; background-color: #f1f1f1;
+    border-radius: 5px; padding: 10px; margin: 10px 0; display: flex;">
+        <img src="static/miller.jpg" alt="chemi qmari" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+        <p style="font-size: larger;">Shi*talk anonimously babe♡</p>
+      </div>
+      <div class="chatcontainer" style="width: 400px; height: 100px; border: 2px solid #424040; background-color: #6e6b6b;
+    border-radius: 5px; padding: 10px; margin: 10px 0; display: flex;">
+        <img src="static/ur20.png" alt="itsok" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+        <p style="font-size: larger;">It's okay, no one has to know babygirl ;*</p>
+      </div>
+</div>
+
+ 
+{% endblock %}

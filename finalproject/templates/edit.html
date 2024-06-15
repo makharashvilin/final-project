@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}edit{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Edit Info</h1>
+    <form action="{{ url_for('edit', id=data[0]) }}" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="{{ data[1] }}"><br><br>
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname" value="{{ data[2] }}"><br><br>
+    <label for="rating">Rating:</label>
+    <input type="text" id="rating" name="rating" value="{{ data[3] }}"><br><br>
+    <label for="comment">Comment:</label>
+    <input name="comment" value="{{ data[4] }}"></input><br><br>
+    <input type="submit" class="btn btn-dark" value="Submit">
+    </form><br>
+    <a href="{{ url_for('shavisia') }}">Back to Table</a>
+</div>
+
+{% endblock %}
